@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <form 
+    action="https://fom.in.ua/echo"
+    method post
+    >
+    <div class="block">
+        <label for="type_of_car_body">Тип кузова:</label>
+        <select name="type_of_car_body" id="type_of_car_body">
+            <option value="sedan">Седан</option>
+            <option value="сompartment">Купе</option>
+            <option value="cabriolet">Кабріолет</option>
+            <option value="rodster">Родстер</option>
+            <option value="pickup">Пікап</option>
+            <option value="limousine">Лімузин</option>
+        </select>
+        </div>
+        <br/>
+    <div class="block">
+        <label for="model_of_car">Марка авто:</label>
+        <select name="model_of_car" id="model_of_car">
+            <option value="BMW">БМВ</option>
+            <option value="Mersedes">Мерседес</option>
+            <option value="Audi">Ауді</option>
+            <option value="Mazda">Мазда</option>
+            <option value="Volkswagen">Фольцваген</option>
+            <option value="Range Rover">Рандж Ровер</option>
+        </select>
+        </div>
+        <br/>
+    <div class="block">
+        <label for="country_producer">Країна виробник:</label>
+        <select name="country_producer" id="country_producer">
+            <option value="Germany">Німеччина</option>
+            <option value="Japan">Японія</option>
+            <option value="US">Америка</option>
+            <option value="UK">Англія</option>
+            <option value="China">Китай</option>
+            <option value="Austria">Австрія</option>
+        </select>
+        </div>
+        <br/>
+    <div class="block">
+            <label for="price-from">Ціна(від):</label>
+            <input type="number" name="price-from" id="price-from">
+        </div>
+        <br/>
+    <div class="block">
+            <label for="price-to">Ціна(до):</label>
+            <input type="number" name="price-to" id="price-to">
+        </div>
+        <br/>
+    <div class="block">
+            <label for="year-from">Рік випуску(від):</label>
+            <input type="number" name="year-from" id="year-from">
+        </div>
+        <br/>
+    <div class="block">
+            <label for="year-to">Рік випуску(до):</label>
+            <input type="number" name="year-to" id="year-to">
+        </div>
+        <br/>
+        <p>Стан:</p>
+    <div class="block">
+        <label for="damaged">Побита</label>
+        <input type="checkbox" name="damaged" id="damaged">
+    </div>
+    <div class="block">
+        <label for="in_credit">В кредиті</label>
+        <input type="checkbox" name="in_credit" id="in_credit">
+    </div>
+    <div class="block">
+        <label for="uncleared">Нерозмитнена</label>
+        <input type="checkbox" name="uncleared" id="uncleared">
+    </div>
+    <br/>
+    <div class="block">
+        <label for="type_of_fuel">Тип палева</label>
+        <select name="type_of_fuel" id="type_of_fuel">
+            <option value="petrol">Бензин</option>
+            <option value="diesel">Дизель</option>
+            <option value="electric">Електрика</option>
+            <option value="hybrid">Гібрид</option>
+        </select>
+    </div>
+    <br/>
+    <div class="block">
+        <label for="transmission">Тип коробки передач:</label>
+        <select id="transmission" name="transmission">
+            <option value="manual">Механічна</option>
+            <option value="automatic">Автоматична</option>
+        </select>
+    </div>
+    <div class="block">
+        <label for="color">Колір:</label><br>
+        <input type="text" id="color" name="color"><br>
+    </div>
+    <p>Комфорт:</p>
+    <div class="block">
+        <label for="sunroof">Люк</label>
+        <input type="checkbox" id="sunroof" name="comfort" value="sunroof">
+    </div>
+    <br/>
+    <div class="block">
+        <label for="leather-seats">Шкіряний салон</label>
+        <input type="checkbox" id="leather-seats" name="comfort" value="leather-seats">
+    </div>
+    <br/>
+    <input type="submit" value="Пошук">
+    </form>
+</body>
+</html>
